@@ -1,0 +1,37 @@
+@use "dev/typography" as *;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+p {
+  margin: 0;
+}
+
+h2 {
+  @include h2("h2");
+}
+h3 {
+  @include h3("h3");
+}
+
+h5 {
+  @include h5("h5");
+}
+
+.txt-l {
+  @include txt-l;
+}
+
+.txt-m {
+  @include txt-m;
+}
+
+.txt-r {
+  @include txt-r;
+}
+
+.txt-s {
+  @include txt-s;
+}

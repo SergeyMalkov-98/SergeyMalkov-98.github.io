@@ -1,0 +1,10 @@
+.translate-y-enter-active,
+.translate-y-leave-active {
+  transition: all 0.2s ease;
+}
+
+.translate-y-enter-from,
+.translate-y-leave-to {
+  opacity: 0;
+  transform: translateY(-10px);
+}

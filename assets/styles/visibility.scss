@@ -1,0 +1,13 @@
+@use "dev/media" as *;
+
+.mobile-only {
+  @include mobile-up {
+    display: none !important;
+  }
+}
+
+.mobile-up {
+  @include mobile-only {
+    display: none !important;
+  }
+}

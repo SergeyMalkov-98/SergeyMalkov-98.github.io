@@ -1,0 +1,24 @@
+$tablet: 1280px;
+
+@mixin media-max($max) {
+  @media screen and (max-width: $max) {
+    @content;
+  }
+}
+
+@mixin media-min($min) {
+  @media screen and (min-width: $min) {
+    @content;
+  }
+}
+
+@mixin mobile-only {
+  @include media-max($tablet - 1) {
+    @content;
+  }
+}
+@mixin mobile-up {
+  @include media-min($tablet) {
+    @content;
+  }
+}

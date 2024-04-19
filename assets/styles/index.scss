@@ -1,0 +1,29 @@
+@use "dev/mixins" as *;
+@use "dev/media" as *;
+@use "colors" as *;
+@use "visibility" as *;
+@use "icons" as *;
+@use "typography" as *;
+@use "transitions" as *;
+@use "fonts" as *;
+
+* {
+  font-family: "Montserrat", sans-serif;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  box-sizing: border-box;
+
+  margin: 0 auto;
+
+  width: 100%;
+  max-width: var(--container-width, 1440px);
+  padding: var(--container-padding, 64px 40px);
+}
